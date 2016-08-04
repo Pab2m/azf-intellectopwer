@@ -1,0 +1,18 @@
+@media (max-width: 320px) {
+  #button-nav{
+    width: 140px;
+  }
+  #email-button { /* Левая колонка */
+   clear: both;
+   margin: 0;
+  }
+  #entry { /* Правая колонка */
+clear: both;
+margin: 0;
+  }
+}
+@media (max-width: 990px) {
+  #right-content{
+    display: none;
+  }
+}

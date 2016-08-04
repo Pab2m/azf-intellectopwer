@@ -1,0 +1,194 @@
+body{
+	font-family: Segoe Ui light;
+}
+
+#header{
+		min-height: 95px;
+}
+header{
+	border-bottom: 2px solid #000;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#logo{
+	margin: 0;
+	padding: 0;
+}
+#email-button  .left .glyphicon, #entry .left .glyphicon{
+	font-size: 18pt;
+	color: #ccc;
+}
+
+#nav-button{
+	padding: 0;
+	 margin-top: 2%;
+	}
+#header{
+	 border-bottom: 1px solid #E4E4E4;
+}
+
+#email-button  .left, #entry .left{
+ display: block;
+ float: left;
+	width: 34px;
+	height: 30px;
+	margin-top: 2.5%;
+}
+#email-button  .right, #entry .right {
+	width: 150px;
+	float: left;
+	padding-left: 10px;
+		padding-right: 0;
+}
+
+#entry, #email-button{
+	display: block;
+	width: 190px;
+	height: 44px;
+	color: #000;
+}
+#entry:hover, #email-button:hover{
+	color:#BBC749;
+}
+#email-button { /* Левая колонка */
+ float: left; /* Обтекание справа */
+}
+#entry { /* Правая колонка */
+ margin-left: 190px; /* Отступ слева */
+}
+#button-nav{
+	width: 300px;
+	margin: 0 auto;
+}
+.right span{
+	line-height: 1em;
+	height: 44px;
+	display		: table-cell;
+	vertical-align	: middle;
+ }
+ nav div{
+	 height: 44px;
+
+ }
+  nav div.a{
+	text-align: center;
+  line-height: 40px;
+	 }
+ nav a{
+	 font-size:14pt;
+	 color: #A3A3A3;
+}
+nav a:hover{
+	text-decoration: none;
+	color: #BBC749;
+}
+#search,#search div{
+	padding: 0;
+}
+#input-search{
+	width: 100%;
+	height: 27px;
+		margin-top: 2px;
+border: 0px solid #000;
+padding-left: 3px;
+padding-right: 3px;
+cursor: text;
+}
+
+#search{
+		margin-top: 7px;
+	height: 35px;
+	border: 1px solid #ccc;
+}
+#button-search span{
+	display: block;
+	width: 35px;
+	height: 35px;
+	margin-top: 2px;
+	font-size: 18pt;
+	color: #ccc;
+	cursor: pointer;
+}
+#button-search span:hover{
+	color: #108F91;
+}
+#content{
+	margin-top: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+
+}
+.img-article{
+	padding: 0;
+	margin-top: 10px;
+}
+.post-article a{
+	font-size: 14pt;
+	color:#A3A3A3;
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 5px;
+}
+.post-article a:hover{
+	text-decoration: none;
+		color: #BBC749;
+}
+.article{
+	margin-top: 15px;
+
+}
+#right-content{
+	padding-right: 0;
+}
+#right-content h3{
+	margin: 0;
+	font-size: 14pt;
+	color:#A3A3A3;
+	text-decoration: none;
+}
+#right-content a{
+	font-size: 11pt;
+	display: inline-block;
+	margin-top: 5px;
+	color: #A3A3A3;
+	text-decoration: none;
+	white-space:nowrap;
+	width: 150px;
+	overflow: hidden;
+}
+#right-content a:hover{
+	color: #BBC749;
+	text-decoration: none;
+}
+
+
+.right-post{
+	height: 80px;
+	overflow: hidden;
+}
+#foter{
+	border-top: 1px solid #BFBFBF;
+	margin-top: 30px;
+}
+#nav-foter{
+	margin-top: 10px;
+}
+#nav-foter div{
+	text-align: center;
+}
+#nav-foter a{
+	font-size: 12pt;
+	color:#A3A3A3;
+	text-decoration: none;
+}
+#nav-foter a:hover{
+	color: #BBC749;
+	text-decoration: none;
+}
+#text-foter{
+	margin-top: 20px;
+	text-align: center;
+	color: #888786;
+	margin-bottom: 25px;
+}

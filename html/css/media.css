@@ -1,0 +1,14 @@
+@media (max-width: 320px) {
+  #button-nav{
+    width: 140px;
+  }
+  #email-button,  #entry { /* Левая колонка */
+   clear: both;
+   margin:10px 0px 10px  0px;
+  }
+}
+@media (max-width: 990px) {
+  #right-content{
+    display: none;
+  }
+}
