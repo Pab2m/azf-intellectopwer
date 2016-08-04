@@ -64,12 +64,14 @@ header{
 }
 
 #entry, #email-button{
+	transition: all 0.6s ease 0s;
 	display: block;
 	width: 190px;
 	height: 44px;
 	color: #000;
 }
 #entry:hover, #email-button:hover{
+	transition: all 0.6s ease 0s;
 	color:#BBC749;
 }
 #email-button { /* Левая колонка */
@@ -98,10 +100,12 @@ header{
   line-height: 40px;
 	 }
  nav a{
+	 	transition: all 0.6s ease 0s;
 	 font-size:14pt;
 	 color: #333333;
 }
 nav a:hover{
+	transition: all 0.6s ease 0s;
 	text-decoration: none;
 	color: #BBC749;
 }
@@ -131,8 +135,10 @@ cursor: text;
 	font-size: 18pt;
 	color: #ccc;
 	cursor: pointer;
+	transition: all 0.6s ease 0s;
 }
 #button-search span:hover{
+	transition: all 0.6s ease 0s;
 	color: #108F91;
 }
 #content{
@@ -146,6 +152,7 @@ cursor: text;
 	margin-top: 10px;
 }
 .post-article a{
+	transition: all 0.6s ease 0s;
 	font-size: 14pt;
 	color: #333333;
 	text-decoration: none;
@@ -153,6 +160,7 @@ cursor: text;
 	margin-top: 5px;
 }
 .post-article a:hover{
+	transition: all 0.6s ease 0s;
 	text-decoration: none;
 		color: #BBC749;
 }
@@ -169,12 +177,14 @@ cursor: text;
 	padding-right: 0;
 }
 #right-content h3{
+	transition: all 0.6s ease 0s;
 	margin: 0;
 	font-size: 14pt;
 	color:#333333;
 	text-decoration: none;
 }
 #right-content a{
+	transition: all 0.6s ease 0s;
 	font-size: 11pt;
 	display: inline-block;
 	margin-top: 5px;
@@ -205,11 +215,13 @@ cursor: text;
 	text-align: center;
 }
 #nav-foter a{
+	transition: all 0.6s ease 0s;
 	font-size: 12pt;
 	color:#333333;
 	text-decoration: none;
 }
 #nav-foter a:hover{
+	transition: all 0.6s ease 0s;
 	color: #BBC749;
 	text-decoration: none;
 }
