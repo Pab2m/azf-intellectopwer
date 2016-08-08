@@ -74,6 +74,11 @@ header{
 	transition: all 0.6s ease 0s;
 	color:#BBC749;
 }
+#entry:active, #email-button:active{
+	color:#BBC749;
+	text-decoration: none;
+}
+
 #email-button { /* Левая колонка */
  float: left; /* Обтекание справа */
 }
@@ -99,15 +104,19 @@ header{
 	text-align: center;
   line-height: 40px;
 	 }
- nav a{
+ nav a, nav div.a{
 	 	transition: all 0.6s ease 0s;
 	 font-size:14pt;
 	 color: #333333;
 }
-nav a:hover{
+nav a:hover, nav div.a:hover{
 	transition: all 0.6s ease 0s;
 	text-decoration: none;
 	color: #BBC749;
+}
+nav a:active{
+	color: #BBC749;
+	text-decoration: none;
 }
 #search,#search div{
 	padding: 0;
@@ -141,6 +150,10 @@ cursor: text;
 	transition: all 0.6s ease 0s;
 	color: #108F91;
 }
+#button-search span:active{
+		color: #108F91;
+	 text-decoration: none;
+}
 #content{
 	margin-top: 15px;
 	padding-left: 5px;
@@ -164,7 +177,10 @@ cursor: text;
 	text-decoration: none;
 		color: #BBC749;
 }
-
+.post-article a:active{
+		color: #BBC749;
+		text-decoration: none;
+}
 .post-article{
 	color:#A3A3A3;
 }
@@ -198,6 +214,10 @@ cursor: text;
 	color: #BBC749;
 	text-decoration: none;
 }
+#right-content a:active{
+	color: #BBC749;
+	text-decoration: none;
+}
 
 
 .right-post{
@@ -225,9 +245,158 @@ cursor: text;
 	color: #BBC749;
 	text-decoration: none;
 }
+#nav-foter a:active{
+	color: #BBC749;
+	text-decoration: none;
+}
 #text-foter{
 	margin-top: 20px;
 	text-align: center;
 	color: #888786;
 	margin-bottom: 25px;
+}
+
+/* Меню выдвижное */
+
+
+.menu-title {
+  display: block;
+  height: 40px;
+  padding: 12px 0 0;
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s background-color;
+}
+
+.menu:hover > .menu-title:before {
+  border-top-width: 0;
+  transition: 0.2s border-top-width ease-in, 0.3s border-top-color;
+}
+
+.menu-title:after {
+  content: "";
+  display: block;
+  height: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-bottom: 0 solid #ebebeb;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 101;
+  transition: 0.2s border-bottom ease-in;
+}
+.menu:hover{
+	cursor: pointer;
+}
+
+.menu:hover > .menu-title:after {
+  border-bottom-width: 5px;
+  transition: 0.2s 0.2s border-bottom-width ease-out;
+}
+
+.menu-title_2nd {
+  background: #4e96b3;
+}
+
+.menu-title_2nd:hover {
+  background: #3e86a3;
+}
+
+.menu-title_2nd:before {
+  border-top-color: #4e96b3;
+}
+
+.menu-title_2nd:hover:before {
+  border-top-color: #3e86a3;
+}
+
+.menu-title_3rd {
+  background: #c97676;
+}
+
+.menu-title_3rd:hover {
+  background: #b96666;
+}
+
+.menu-title_3rd:before {
+  border-top-color: #c97676;
+}
+
+.menu-title_3rd:hover:before {
+  border-top-color: #b96666;
+}
+
+.menu-title_4th {
+  background: #dbab58;
+}
+
+.menu-title_4th:hover {
+  background: #cb9b48;
+}
+
+.menu-title_4th:before {
+  border-top-color: #dbab58;
+}
+
+.menu-title_4th:hover:before {
+  border-top-color: #cb9b48;
+}
+
+.menu-dropdown {
+  width:160px;
+  background: #fff;
+  position: absolute;
+  border-radius: 0 0 5px 5px;
+  padding-left: 0px;
+  z-index: 100;
+  transition: 0.5s padding, 0.5s background;
+}
+
+
+.menu:not(:hover) > .menu-dropdown:after {
+  border-top-color: #dddddd;
+}
+
+.menu:not(:hover) > .menu-title:after {
+  border-bottom-color: #dddddd;
+}
+
+ .menu-dropdown > * {
+  overflow: hidden;
+  height: 35px;
+  padding: 5px 10px;
+ background: transparent;
+  white-space: nowrap;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc; 
+  transition: 0.5s height cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.5s padding cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.5s margin cubic-bezier(0.73, 0.32, 0.34, 1.5), 0.5s 0.2s color, 0.2s background-color, 0.2s borde;
+}
+.menu-dropdown  li a{
+	display: block;
+}
+.menu-dropdown > *:first-child{
+	border-top:1px solid #ccc;
+}
+
+.menu-dropdown > *:last-child{
+	border-bottom:1px solid #ccc;
+}
+
+
+.menu-dropdown > *:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.menu:not(:hover) > .menu-dropdown > * {
+  visibility: hidden;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+  color: rgba(25, 25, 25, 0);
+  transition: 0.5s 0.1s height, 0.5s 0.1s padding, 0.5s 0.1s margin, 0.3s color, 0.6s visibility;
+  z-index: 99;
 }
